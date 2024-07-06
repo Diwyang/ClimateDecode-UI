@@ -1,0 +1,56 @@
+.credit-card {
+    display: flex;
+    border-bottom: 1px solid #012024;
+    padding: 24px 0;
+    margin: 0 72px 0 48px;
+
+    &__heading {
+        font-family: Roboto;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 45px;
+        letter-spacing: 0.05em;
+        text-align: left;
+    }
+
+    &__content {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 32px;
+        text-align: left;
+    }
+
+    // &__inputWrapper {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: space-between;
+    // }
+
+    &__perTonneWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__button {
+        width: 280px;
+        height: 51px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 45px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        background: #4E888F;
+        color: #ffffff;
+        border: none;
+        border-radius: 10px;
+    }
+
+    &__image {
+        width: 329px;
+        height: 236px;
+        left: 886px;
+    }
+}

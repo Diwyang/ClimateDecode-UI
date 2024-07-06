@@ -1,0 +1,26 @@
+.progress-bar-wrapper {
+  background-color: #cbeaee;
+  width: 100%;
+  border-radius: 8px;
+}
+.progress-bar {
+  background-color: #8fced6;
+  height: 30px;
+  border-radius: 8px;
+  padding: 0px 10px;
+  vertical-align: middle;
+}
+
+.left-text {
+  float: left;
+  padding-left: 10px;
+  margin-top: 5px;
+  position: absolute;
+}
+.right-text {
+  float: right;
+  margin-right: 10px;
+  margin-top: 5px;
+  position: absolute;
+  right: 10px;
+}

@@ -1,0 +1,16 @@
+enum FormEnum {
+  EVENT,
+  VENUE,
+  FOOD,
+  ACCOMODATION,
+  TRAVEL,
+  TRANSPORT,
+  MATERIAL,
+  WASTE,
+  MARKETING,
+  PREPARATION,
+  WATER,
+  STREAMING,
+}
+
+export default FormEnum;

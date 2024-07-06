@@ -1,0 +1,19 @@
+.main-form-container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.main-form {
+  height: 100%;
+  overflow: hidden;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  .form-fields-container {
+    height: 100%;
+    overflow: auto;
+  }
+  .form-actions-container {
+    float: right;
+    padding-top: 10px;
+  }
+}

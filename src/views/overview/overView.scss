@@ -1,0 +1,30 @@
+.ant-tabs-content-top:has(.tab-body),
+.tab-body {
+  height: 100%;
+}
+
+.upcoming-events-card{
+  thead .ant-table-cell{
+    color: #4E888F !important;
+    ;
+  }
+}
+
+.impact{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .row{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .text{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.011em;
+    text-align: left;    
+  }
+}
