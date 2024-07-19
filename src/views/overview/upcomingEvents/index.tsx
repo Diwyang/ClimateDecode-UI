@@ -4,12 +4,18 @@ import type { TableProps } from 'antd';
 
 interface DataType {
   event_id: string;
+  event_type: string;
+  event_organiser: string;
+  contact_person_name: string;
+  contact_person_email: string;
   event_name: string;
-  event_hosted_country: number;
-  address: string;
-  event_start_date: string[];
+  event_hosted_country: string;
+  event_start_date: string;
   event_end_date: string;
   status: string;
+  total_no_of_days: number;
+  updated_date_time: string;
+  venue_detail_list: string[];
 }
 
 const columns: TableProps<DataType>['columns'] = [
@@ -44,7 +50,7 @@ const columns: TableProps<DataType>['columns'] = [
 
 const data: DataType[] = [
   {
-    event_id: 1,
+    event_id: '1',
     event_type: 'Private Event',
     event_name: 'Inauguration Event Store',
     event_organiser: 'Event LLV',
@@ -59,7 +65,7 @@ const data: DataType[] = [
     status: 'Upcoming',
   },
   {
-    event_id: 2,
+    event_id: '2',
     event_type: 'MORNINGEVENT',
     event_name: 'Party',
     event_organiser: 'Hrishabh Kumar',
@@ -74,7 +80,7 @@ const data: DataType[] = [
     status: 'Upcoming',
   },
   {
-    event_id: 3,
+    event_id: '3',
     event_type: 'MORNINGEVENT',
     event_name: 'Party',
     event_organiser: 'Hrishabh Kumar',
@@ -89,7 +95,7 @@ const data: DataType[] = [
     status: 'Upcoming',
   },
   {
-    event_id: 4,
+    event_id: '4',
     event_type: 'MORNINGEVENT',
     event_name: 'Party',
     event_organiser: 'Hrishabh Kumar',
@@ -108,10 +114,12 @@ const data: DataType[] = [
 const getFormatedDate = (date: string) => {
   const newDate = new Date(date);
   const yyyy = newDate.getFullYear();
-  let mm = newDate.getMonth() + 1; // Months start at 0!
-  let dd = newDate.getDate();
+  let mm: any = '';
+  let dd: any = '';
+  mm = newDate.getMonth() + 1; // Months start at 0!
+  dd = newDate.getDate();
 
-  if (dd < 10) dd = '0' + dd;
+  if (dd < 10) dd = ('0' + dd) as string;
   if (mm < 10) mm = '0' + mm;
 
   const formatteddate = dd + '.' + mm + '.' + yyyy;

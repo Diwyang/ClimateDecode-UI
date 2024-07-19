@@ -8,7 +8,7 @@ import {
   CertificateSvg,
   DataCollectionSvg,
   OverviewSvg,
-  AbateEmissionSvg
+  AbateEmissionSvg,
 } from './icons';
 import logo from '../images/climate-decode-logo.svg';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -74,7 +74,7 @@ const getMenuItems = (
     ),
     getItem(
       'Buy Credit',
-      'buy-credit',
+      'buy-credits',
       <BuyCreditSvg className="side-nav-icon" />
     ),
     getItem(

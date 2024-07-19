@@ -12,3 +12,10 @@ interface EditableCellProps extends React.HTMLAttributes<HTMLElement> {
   rules: FormRule[];
   dependencies: string[];
 }
+
+interface TableItem {
+  key: string;
+  mode: string;
+  travellers: number;
+  address: string;
+}

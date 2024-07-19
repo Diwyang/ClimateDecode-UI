@@ -132,7 +132,13 @@ const TransportForm: React.FC<{
     >
       <div className="form-fields-container no-overflow">
         <Flex gap="20px" vertical className="full-height">
-          <EditableTable formItems={formItems} data={data} setData={onChange} />
+          <EditableTable
+            formItems={formItems}
+            data={data}
+            setData={onChange}
+            addRow={() => {}}
+            updateRow={() => {}}
+          />
         </Flex>
       </div>
       <Flex gap="large" className="form-actions-container">

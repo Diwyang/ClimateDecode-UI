@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Col, Row } from 'antd';
+import { Col, Row } from 'antd';
 import Analysis from './analysis';
 import CollectionSheet from './collection';
 import UpcomingEvent from './upcomingEvents';

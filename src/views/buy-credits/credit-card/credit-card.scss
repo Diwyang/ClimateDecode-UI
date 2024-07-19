@@ -3,6 +3,12 @@
     border-bottom: 1px solid #012024;
     padding: 24px 0;
     margin: 0 72px 0 48px;
+    justify-content: space-between;
+
+    &__heading-wraper{
+        width: 30%;
+        height: 200px;
+    }
 
     &__heading {
         font-family: Roboto;
@@ -21,16 +27,22 @@
         text-align: left;
     }
 
-    // &__inputWrapper {
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: space-between;
-    // }
+    &__inputWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 200px;
+    }
 
     &__perTonneWrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        .price{
+            font-size: 16px;
+            font-weight: 700;
+        }
     }
 
     &__button {

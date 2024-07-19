@@ -8,7 +8,7 @@ import LandingPage from './views/climate-neutral/LandingPage';
 import Analysis from './views/analysis';
 import AbateEmissions from './views/abate-emissions';
 import Overview from './views/overview';
-import BuyCredits from './views/buy-credits'
+import BuyCredits from './views/buy-credits';
 
 function App() {
   return (

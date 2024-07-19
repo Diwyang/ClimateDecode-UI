@@ -1,15 +1,11 @@
 import { ReactNode } from 'react';
-import { Layout, theme } from 'antd';
+import { Layout } from 'antd';
 import Sidebar from './sidebar';
 import AppHeader from './header';
 
 const { Content } = Layout;
 
 function LayoutPage({ children }: { children: ReactNode }) {
-  const {
-    token: { colorBgContainer },
-  } = theme.useToken();
-
   return (
     <Layout style={{ minHeight: '100vh' }}>
       <Sidebar />

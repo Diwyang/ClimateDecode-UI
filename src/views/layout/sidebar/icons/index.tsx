@@ -733,6 +733,7 @@ export const AbateEmissionSvg = (props: SVGProps<SVGSVGElement>) => (
     viewBox="0 0 19 19"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <g clipPath="url(#clip0_116_5127)">
       <path
