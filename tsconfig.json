@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "src/",
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
@@ -20,7 +21,8 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "src/**/*.ts","src/**/*.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }],
+  "typeRoots": ["node_modules/@types", "node_modules"],
   "exclude": [".eslintrc.cjs"]
 }

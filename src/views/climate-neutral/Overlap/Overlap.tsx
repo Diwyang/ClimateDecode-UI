@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 import { Layout, Menu, Typography } from 'antd';
 import logo from '../../layout/images/climate-decode-logo.svg';
-import { MenuItemType } from 'antd/es/menu/hooks/useItems';
 import { useNavigate } from 'react-router-dom';
 
 const { Header, Content } = Layout;
 
-const items: MenuItemType[] = [
+const items = [
   {
     key: 'home',
     label: 'Home',
