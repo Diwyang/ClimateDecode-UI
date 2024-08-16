@@ -24,5 +24,5 @@
   "include": ["src", "src/**/*.ts","src/**/*.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }],
   "typeRoots": ["node_modules/@types", "node_modules"],
-  "exclude": [".eslintrc.cjs"]
+  "exclude": ["node_modules",".eslintrc.cjs"]
 }
