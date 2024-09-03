@@ -20,20 +20,20 @@ const CreditCard: React.FC<IProps> = ({
 }) => {
   return (
     <div className="credit-card">
-      <div className='credit-card__heading-wraper'>
+      <div className="credit-card__heading-wraper">
         <h1 className="credit-card__heading">{heading}</h1>
         <p className="credit-card__content">{content}</p>
       </div>
       <div className="credit-card__inputWrapper">
         <div className="credit-card__perTonneWrapper">
           <div>{perTonneTxt}</div>
-          <div className='price'>11:00 EUR</div>
+          <div className="price">11:00 EUR</div>
         </div>
         <div className="credit-card__perTonneWrapper">
           <div>
             <input type="number" placeholder={inputLabel} />
           </div>
-          <div className='price'>11:00 EUR</div>
+          <div className="price">11:00 EUR</div>
         </div>
         <Button type="primary" size="large" block>
           {btnCta}

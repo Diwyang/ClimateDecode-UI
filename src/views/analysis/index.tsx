@@ -22,6 +22,17 @@ const Analysis: React.FC = () => {
   const onChange = (key: string) => {
     console.log(key);
   };
+
+  React.useEffect(() => {
+    fetch('http://20.197.13.9:8080/events/information')
+      .then((x) => {
+        console.log('test', x);
+      })
+      .catch((err) => {
+        console.log('err', err);
+      });
+  }, []);
+
   return (
     <LayoutPage>
       <Tabs

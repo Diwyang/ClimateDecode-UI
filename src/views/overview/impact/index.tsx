@@ -11,7 +11,9 @@ const Impact: React.FC = () => (
     <div className="impact">
       <div className="row">
         <Avatar shape="square" size={64} />
-        <div className="text">Flights around the circumference of the world, or</div>
+        <div className="text">
+          Flights around the circumference of the world, or
+        </div>
       </div>
       <div className="row">
         <Avatar shape="square" size={64} />
@@ -19,7 +21,9 @@ const Impact: React.FC = () => (
       </div>
       <div className="row">
         <Avatar shape="square" size={64} />
-        <div className="text">Pine trees needed to capture emissions for a whole year</div>
+        <div className="text">
+          Pine trees needed to capture emissions for a whole year
+        </div>
       </div>
     </div>
   </Card>
