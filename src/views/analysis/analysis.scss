@@ -1,0 +1,29 @@
+.pie-heading{
+    display: flex;
+    margin-top: -20px;
+    width: 146px;
+    justify-content: center;
+}
+
+.eqvelent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .eqvelent-card{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+   
+    .card {
+            width: 63px;
+            height: 63px;
+            background-color: #D9D9D9;
+            ;
+        }
+
+    .text{
+        font-weight: 500px;
+        font-size: 16px;
+    }
+}

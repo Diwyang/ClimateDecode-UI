@@ -30,9 +30,12 @@ const CreditCard: React.FC<IProps> = ({
           <div className="price">11:00 EUR</div>
         </div>
         <div className="credit-card__perTonneWrapper">
-          <div>
-            <input type="number" placeholder={inputLabel} />
-          </div>
+          <fieldset className="counter">
+            <legend className="counter-text">{inputLabel}</legend>
+            <button className="counter-btn">−</button>
+            <span className="counter-value">1</span>
+            <button className="counter-btn">+</button>
+          </fieldset>
           <div className="price">11:00 EUR</div>
         </div>
         <Button type="primary" size="large" block>

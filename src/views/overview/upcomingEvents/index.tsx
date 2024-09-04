@@ -1,7 +1,10 @@
 import React from 'react';
-import { Card, Table } from 'antd';
+import { Card, Table, Button } from 'antd';
 import type { TableProps } from 'antd';
 import Api from '../../../services/api.service';
+import downloadIcon from '../../../assets/download.svg';
+import editIcon from '../../../assets/edit.svg';
+import deleteIcon from '../../../assets/trash.svg';
 
 interface DataType {
   event_id: string;
@@ -127,6 +130,15 @@ const getFormatedDate = (date: string) => {
   return formatteddate;
 };
 
+const cardIcon = () => {
+  return (
+    <div className="upcoming-events-card-icon">
+      <img src={downloadIcon} />
+      <img src={editIcon} />
+      <img src={deleteIcon} />
+    </div>
+  );
+};
 const UpcomingEvent: React.FC = () => {
   const [eventsData, setEventsData] = React.useState([]);
   React.useEffect(() => {
@@ -143,12 +155,21 @@ const UpcomingEvent: React.FC = () => {
       bordered={false}
       className="upcoming-events-card"
       style={{ height: 400 }}
+      extra={cardIcon()}
     >
       <Table
         columns={columns}
         dataSource={eventsData}
-        style={{ width: '100%' }}
+        style={{ width: '100%', minHeight: '270px' }}
       />
+      <Button
+        type="primary"
+        htmlType="button"
+        shape="round"
+        className="new-event-button"
+      >
+        Create New Event
+      </Button>
     </Card>
   );
 };

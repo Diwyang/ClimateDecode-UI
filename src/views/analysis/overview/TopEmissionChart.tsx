@@ -92,14 +92,19 @@ const config = {
   angleField: 'tCO2Eq',
   colorField: 'category',
   legend: false,
-  label: false,
+  label: {
+    text: 'tCO2Eq',
+    style: {
+      fontWeight: 'bold',
+    },
+  },
   tooltip: {
     shared: false,
     title: 'category',
     color: 'color',
   },
-  width: 200,
-  height: 200,
+  width: 146,
+  height: 146,
   style: {
     fill: (data: DataType) => {
       return data.color;
@@ -126,6 +131,7 @@ const createChart = () => {
               },
             ]}
           />
+          <div className= "pie-heading">{data[i - 1]?.category}</div>
         </Col>
         <Col span={12}>
           <Pie
@@ -140,6 +146,7 @@ const createChart = () => {
               },
             ]}
           />
+          <div className= "pie-heading">{data[i - 1]?.category}</div>
         </Col>
       </Row>
     );

@@ -1,4 +1,4 @@
-import { Card, Col, Row } from 'antd';
+import { Card, Col, Row, Button } from 'antd';
 import React from 'react';
 import Statistics from './Statistics';
 import TopEmissionChart from './TopEmissionChart';
@@ -16,7 +16,22 @@ const Overview: React.FC = () => {
             </Card>
           </Col>
           <Col span={24}>
-            <Card title={<h3>Equivalent to</h3>}>First</Card>
+            <Card title={<h3>Equivalent to</h3>}>
+              <div className="eqvelent">
+                <div className="eqvelent-card">
+                  <div className="card"></div>
+                  <div className="text">Miles Driven</div>
+                </div>
+                <div className="eqvelent-card">
+                  <div className="card"></div>
+                  <div className="text">Miles Driven</div>
+                </div>
+                <div className="eqvelent-card">
+                  <div className="card"></div>
+                  <div className="text">Miles Driven</div>
+                </div>
+              </div>
+            </Card>
           </Col>
         </Row>
       </Col>
@@ -38,6 +53,16 @@ const Overview: React.FC = () => {
             </Card>
           </Col>
         </Row>
+      </Col>
+      <Col span={24} style={{ minWidth: '400px' }}>
+        <Button
+          type="primary"
+          htmlType="button"
+          shape="round"
+          className="new-event-button"
+        >
+          Abate Your Event Emissions
+        </Button>
       </Col>
     </Row>
   );

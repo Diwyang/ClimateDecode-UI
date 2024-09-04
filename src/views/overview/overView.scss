@@ -10,6 +10,19 @@
   }
 }
 
+.upcoming-events-card-icon{
+  display: flex;
+  gap: 20px;
+  img{
+    cursor: pointer;
+  }
+}
+
+.new-event-button{
+  float: right;
+  margin-top: 20px;
+}
+
 .impact{
   display: flex;
   flex-direction: column;

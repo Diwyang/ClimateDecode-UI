@@ -3,6 +3,7 @@ import React from 'react';
 import Overview from './overview';
 import LayoutPage from '../layout/Layout';
 import '../data-collection/form/venue/tabs.scss';
+import './analysis.scss';
 
 const items: TabsProps['items'] = [
   {

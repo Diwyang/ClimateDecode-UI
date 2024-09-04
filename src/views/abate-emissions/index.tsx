@@ -5,10 +5,13 @@ import '../data-collection/form/venue/tabs.scss';
 import Statistics from './Statistics';
 import Analysis from './analysis';
 import TopEmissionChart from './TopEmissionChart';
+import EventEmission from './EventEmission';
+import './abateEmission.scss';
 
 const AbateEmissions: React.FC = () => {
   return (
     <LayoutPage>
+      <EventEmission />
       <h1>ABATE YOUR EVENT EMISSIONS</h1>
       <Row gutter={24}>
         <Col span={8}>
