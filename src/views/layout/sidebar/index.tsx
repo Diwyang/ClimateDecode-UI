@@ -92,7 +92,10 @@ const AppSidebar: React.FC = () => {
   const currentStep = getCurrentStep(location.pathname);
 
   const onStepChange = (id: number) => {
-    navigate(`/dataCollection/${FormEnum[steps[id].id].toLowerCase()}`);
+    debugger
+    navigate(`/dataCollection/${FormEnum[steps[id].id].toLowerCase()}`, {
+      state: { name: FormEnum[steps[id].id].toLowerCase() },
+    });
   };
 
   const {
@@ -121,7 +124,7 @@ const AppSidebar: React.FC = () => {
         items={getMenuItems(onStepChange, currentStep)}
         onClick={({ key }) => {
           if (key !== 'steps') {
-            navigate(`/${key}`);
+            navigate(`/${key}`, { state: { name: key } });
           }
         }}
       />
