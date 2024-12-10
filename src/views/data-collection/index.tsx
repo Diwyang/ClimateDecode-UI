@@ -36,12 +36,16 @@ function HomeScreen() {
 
   const next = () => {
     const step = getNextStep(location.pathname);
-    navigate(`/dataCollection/${FormEnum[step.id].toLowerCase()}`);
+    navigate(`/dataCollection/${FormEnum[step.id].toLowerCase()}`, {
+      state: { name: FormEnum[step.id].toLowerCase() },
+    });
   };
 
   const prev = () => {
     const step = getPrevStep(location.pathname);
-    navigate(`/dataCollection/${FormEnum[step.id].toLowerCase()}`);
+    navigate(`/dataCollection/${FormEnum[step.id].toLowerCase()}`, {
+      state: { name: FormEnum[step.id].toLowerCase() },
+    });
   };
 
   return (
