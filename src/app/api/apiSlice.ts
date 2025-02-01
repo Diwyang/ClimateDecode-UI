@@ -12,7 +12,7 @@ const baseQuery = fetchBaseQuery({
     // headers.append('Access-Control-Allow-Credentials', 'true');
     headers.set('Access-Control-Allow-Origin', 'http://20.197.13.9/api');
     if (token) {
-      headers.append('authorization', `Bearer ${token}`);
+     // headers.append('authorization', `Bearer ${token}`);
     }
     return headers;
   },
