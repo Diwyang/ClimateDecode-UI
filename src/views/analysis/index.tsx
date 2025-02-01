@@ -25,7 +25,7 @@ const Analysis: React.FC = () => {
   };
 
   React.useEffect(() => {
-    fetch('http://20.197.13.9:8080/events/information')
+    fetch('http://20.197.13.9:80/api/events/information')
       .then((x) => {
         console.log('test', x);
       })
