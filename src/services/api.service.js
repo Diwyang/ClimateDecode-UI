@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = 'http://20.197.13.9:80/';
+const baseUrl = 'http://20.197.13.9:80/api/';
 const token = JSON.parse(
   localStorage.getItem('sb-cnimngcwarthyzxufwmy-auth-token')
 )?.access_token;
