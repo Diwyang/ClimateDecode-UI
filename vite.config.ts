@@ -6,7 +6,7 @@ import svgr from 'vite-plugin-svgr';
 export default defineConfig({
   plugins: [react(), svgr()],
   server: {
-    allowedHosts: ['frontend_web'],
+    allowedHosts: ['web.climate-decode.com'],
     port: 3000,
   },
 });
