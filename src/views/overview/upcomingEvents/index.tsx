@@ -47,8 +47,8 @@ const columns: TableProps<DataType>['columns'] = [
   },
   {
     title: 'Status',
-    key: 'status',
-    dataIndex: 'status',
+    key: 'event_status',
+    dataIndex: 'event_status',
   },
 ];
 
