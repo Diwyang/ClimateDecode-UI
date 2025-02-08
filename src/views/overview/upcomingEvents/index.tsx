@@ -16,7 +16,7 @@ interface DataType {
   event_hosted_country: string;
   event_start_date: string;
   event_end_date: string;
-  status: string;
+  event_status: string;
   total_no_of_days: number;
   updated_date_time: string;
   venue_detail_list: string[];
