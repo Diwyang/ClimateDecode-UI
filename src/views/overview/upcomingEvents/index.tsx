@@ -140,7 +140,7 @@ const cardIcon = () => {
   );
 };
 const UpcomingEvent: React.FC = () => {
-  const [eventsData, setEventsData] = React.useState([]);
+  const [eventsData, setEventsData] = React.useState<DataType[]>([]);
   React.useEffect(() => {
     Api.get('events/information').then((res: any) => {
       if (res && res.data) {
