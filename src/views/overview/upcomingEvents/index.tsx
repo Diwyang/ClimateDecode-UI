@@ -5,6 +5,7 @@ import Api from '../../../services/api.service';
 import downloadIcon from '../../../assets/download.svg';
 import editIcon from '../../../assets/edit.svg';
 import deleteIcon from '../../../assets/trash.svg';
+import { useNavigate } from 'react-router-dom';
 
 interface DataType {
   event_id: string;
@@ -141,6 +142,7 @@ const cardIcon = () => {
 };
 const UpcomingEvent: React.FC = () => {
   const [eventsData, setEventsData] = React.useState<DataType[]>([]);
+  const navigate = useNavigate();
   React.useEffect(() => {
     Api.get('events/information').then((res: any) => {
       if (res && res.data) {
@@ -167,6 +169,7 @@ const UpcomingEvent: React.FC = () => {
         htmlType="button"
         shape="round"
         className="new-event-button"
+        onClick={()=>navigate('/dataCollection/event')}
       >
         Create New Event
       </Button>
