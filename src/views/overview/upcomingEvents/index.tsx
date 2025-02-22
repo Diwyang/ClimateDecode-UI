@@ -144,7 +144,7 @@ const UpcomingEvent: React.FC = () => {
   React.useEffect(() => {
     Api.get('events/information').then((res: any) => {
       if (res && res.data) {
-        const resData = res.data;
+        const resData = res?.data?.data;
         setEventsData(resData);
       }
     });
