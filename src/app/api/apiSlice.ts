@@ -5,12 +5,12 @@ const baseQuery = fetchBaseQuery({
   //baseUrl: 'http://localhost:9091',
   baseUrl: 'http://20.197.13.9/api',
   // crendentials: "include" will face CORS if credential is not provided
-  credentials: 'same-origin',
+  //credentials: 'same-origin',
   prepareHeaders(headers, store: any) {
     const token = store.getState().auth.token;
     // headers.append('Access-Control-Allow-Origin', 'http://localhost:3000');
     // headers.append('Access-Control-Allow-Credentials', 'true');
-    headers.set('Access-Control-Allow-Origin', 'http://20.197.13.9/api');
+    //headers.set('Access-Control-Allow-Origin', 'http://20.197.13.9/api');
     if (token) {
      // headers.append('authorization', `Bearer ${token}`);
     }
